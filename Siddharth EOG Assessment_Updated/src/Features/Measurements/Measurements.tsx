@@ -45,7 +45,7 @@ export default () => {
   const dispatch = useDispatch();
   const measurements = useSelector(getMeasurements);
   const selectedMetrics = useSelector(getSelectedMetrics);
-  const [isSubscriptionPaused, setIsSubscriptionPaused] = useState(false);
+  const [isSubscriptionPaused] = useState(false);
 
   const [{ fetching, data, error }] = useSubscription({ query: newMeasurement, pause: isSubscriptionPaused });
   const [multipleMeasurementsResult] = useQuery({
