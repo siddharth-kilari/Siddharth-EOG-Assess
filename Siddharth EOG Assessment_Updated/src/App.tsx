@@ -7,7 +7,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
 import GraphData from './components/GraphData';
-import { client, subscriptionClient } from './clients';
+import { client} from './clients';
 
 const store = createStore();
 const theme = createMuiTheme({
